@@ -88,6 +88,8 @@ export default {
     width: 100%;
     height: 285px;
     position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
     .banner-bottom-cover{
       position:absolute;
       width: 100%;
