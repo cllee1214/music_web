@@ -110,11 +110,12 @@ export default {
             width: 100%;
             height: 100%;
             display: none;
+            float: left;
             &.cur{
               display: block;
             }
             img{
-                width: 100%;
+                width: 730px;
                 height: 100%;
             }
         }

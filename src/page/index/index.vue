@@ -4,7 +4,14 @@
         <Header />
         <Nav />
         <Banner />
-        <Recommend />
+        <div class='index-main'>
+             <div class="index-left">
+                <Recommend />
+                <NewRecord />
+                <RankList />
+            </div>
+        </div>
+       
     </div> 
 </template>
 
@@ -14,12 +21,31 @@ import Banner from '@components/banner.vue'
 import Nav from '@components/nav.vue'
 
 import Recommend from './recommend.vue'
+import NewRecord from './newRecord.vue'
+import RankList from './rankList.vue'
 export default {
     components: {
         Header,
         Banner,
         Nav,
-        Recommend
+        Recommend,
+        NewRecord,
+        RankList
     }
 }
 </script>
+
+<style lang="scss">
+    #index {
+        .index-main{
+            width: 983px;
+            margin: auto;
+            overflow: hidden;
+            .index-left{
+                float: left;
+                width: 730px;
+            }
+        }
+        
+    }
+</style>
